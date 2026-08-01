@@ -39,18 +39,6 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "TypeScript",
     image: "ts.png",
     width: 80,
@@ -69,22 +57,10 @@ export const SKILL_DATA = [
     height: 80,
   },
   {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "Node.js",
     image: "node.png",
     width: 80,
     height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
   },
 ] as const;
 
@@ -132,26 +108,8 @@ export const FRONTEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
     skill_name: "React",
     image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
     width: 80,
     height: 80,
   },
@@ -166,6 +124,18 @@ export const FRONTEND_SKILL = [
     image: "next.png",
     width: 80,
     height: 80,
+  },
+  {
+    skill_name: "Flutter",
+    image: "flutter.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Figma",
+    image: "figma.png",
+    width: 50,
+    height: 50,
   },
 ] as const;
 
@@ -183,16 +153,16 @@ export const BACKEND_SKILL = [
     height: 80,
   },
   {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
+    skill_name: "Spring.js",
+    image: "springboot.png",
+    width: 80,
+    height: 80,
   },
   {
-    skill_name: "Firebase",
-    image: "firebase.png",
-    width: 55,
-    height: 55,
+    skill_name: "Laravel.js",
+    image: "laravel1.png",
+    width: 80,
+    height: 80,
   },
   {
     skill_name: "PostgreSQL",
@@ -213,40 +183,14 @@ export const BACKEND_SKILL = [
     height: 70,
   },
   {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
-] as const;
-
-export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
     skill_name: "Docker",
     image: "docker.png",
     width: 70,
     height: 70,
   },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
-  },
 ] as const;
+
+export const FULLSTACK_SKILL = [] as const;
 
 export const OTHER_SKILL = [
   {
@@ -259,25 +203,78 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Sistem Klasifikasi Sentimen Berita PTPN IV Regional III (N2G)",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
+      "A web-based news sentiment analysis system that automatically classifies positive, neutral, and negative news related to PTPN IV Regional III using the IndoBERT model, featuring automated news scraping and an interactive monitoring dashboard.",
+    images: [
+      "/projects/N2G/N2G-1.png",
+      "/projects/N2G/N2G-6.png",
+      "/projects/N2G/N2G-4.png",
+      "/projects/N2G/N2G-3.png",
+      "/projects/N2G/N2G-2.png",
+      "/projects/N2G/N2G-5.png",
+    ],
     link: "https://example.com",
+    tech: ["Flask", "Next.js", "Tailwind CSS", "MySQL", "IndoBERT"],
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "PPDB MA Al-Muhsinin",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
+      "A web-based student admission management system for MA Al-Muhsinin that streamlines online registration, document submission, applicant verification, and administrative management through a responsive and user-friendly dashboard.",
+    images: [
+      "/projects/Ma Al-Muhsinin/ma-almuhsinin-1.png",
+      "/projects/Ma Al-Muhsinin/ma-almuhsinin-2.png",
+      "/projects/Ma Al-Muhsinin/ma-almuhsinin-3.png",
+      "/projects/Ma Al-Muhsinin/ma-almuhsinin-4.png",
+      "/projects/Ma Al-Muhsinin/ma-almuhsinin-5.png",
+    ],
     link: "https://example.com",
+    tech: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
   },
   {
-    title: "Space Themed Website",
+    title: "Sistem Informasi Puskesmas Rokan IV Koto",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
+      "A web-based healthcare information system designed for Puskesmas Rokan IV Koto, featuring patient management, doctor scheduling, medical records, service administration, and an interactive dashboard to support efficient healthcare operations.",
+    images: [
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 1.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 5.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 6.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 3.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 7.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 2.png",
+      "/projects/Puskesmas Rokan IV Koto/Puskesmas Rokan IV Koto 4.png",
+    ],
     link: "https://example.com",
+    tech: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
+  },
+  {
+    title: "Sistem Informasi Bimbel Setia Aqidah",
+    description:
+      "A web-based tutoring management system designed for Bimbel Setia Aqidah, featuring student management, teacher management, class scheduling, attendance tracking, and an administrative dashboard to support efficient academic operations.",
+    images: [
+      "/projects/Simbelsah/Simbelsah-1.png",
+      "/projects/Simbelsah/Simbelsah-2.png",
+      "/projects/Simbelsah/Simbelsah-3.png",
+      "/projects/Simbelsah/Simbelsah-4.png",
+      "/projects/Simbelsah/Simbelsah-5.png",
+      "/projects/Simbelsah/Simbelsah-6.png",
+      "/projects/Simbelsah/Simbelsah-7.png",
+    ],
+    link: "https://example.com",
+    tech: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
+  },
+  {
+    title: "Web Profil Desa",
+    description:
+      "A web-based village profile and information system that provides public access to village news, government structure, population information, development programs, and community services through a responsive and user-friendly interface.",
+    images: [
+      "/projects/Web Desa/Web Desa-1.png",
+      "/projects/Web Desa/Web Desa-2.png",
+      "/projects/Web Desa/Web Desa-3.png",
+      "/projects/Web Desa/Web Desa-4.png",
+    ],
+    link: "https://example.com",
+    tech: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
   },
 ] as const;
 
